@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="get" action="envio_dados.php">
+    <input type="text" name="nome" placeholder="Digite seu Nome aqui">
+    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+    <div class="field radiobox">
+        <span>Deseja receber nossas novidades?</span>
+        <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+        <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+    </div>
+    <br/><br/>
+    <br><br>
+<form>
+    <p>Qual sua idade?</p>
+    <input type="radio" name="idade" value="18_22">18 a 22 <br>
+    <input type="radio" name="idade" value="23_30">23 a 30 <br>
+    <input type="radio" name="idade" value="mais31">acima de 31<br>
+</form>
+<br><br>
+<form>
+  <input type="button" value="Finalizar" onclick="msg()">
+</form>
+<script>
+function msg() {
+  alert("Cadastro realizado!");
+}
+</script>
+<br/><br/>
+
+
+</form>
